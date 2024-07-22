@@ -21,8 +21,30 @@ inline void morton3D_32_decode(const uint_fast32_t morton, uint_fast16_t& x, uin
 inline void morton3D_64_decode(const uint_fast64_t morton, uint_fast32_t& x, uint_fast32_t& y, uint_fast32_t& z);
 </pre>
 
+### Python usage
+
+Libmorton also provides Python bindings for encoding and decoding Morton codes. You can use these bindings to call libmorton functions directly from Python.
+
+```python
+import pylibmorton
+
+# Encoding 3D coordinates to Morton code
+morton_code = pylibmorton.encode_3d(1, 2, 3)
+print(f"Morton Code: {morton_code}")
+
+# Decoding Morton code to 3D coordinates
+x, y, z = pylibmorton.decode_3d(morton_code)
+print(f"Decoded Coordinates: x={x}, y={y}, z={z}")
+```
+
 ## Installation
 No compilation / installation is required (just download the headers and include them), but I was informed libmorton is packaged for [Microsoft's VCPKG system](https://github.com/Microsoft/vcpkg) as well, if you want a more controlled environment to install C++ packages in.
+
+### Python installation
+To install the Python bindings, you can use the following command:
+```bash
+pip install git+https://github.com/HyeonJaeGil/libmorton-python.git@python#egg=pylibmorton
+```
 
 ## Instruction sets
 In the standard case, libmorton only uses operations that are supported on pretty much any CPU you can throw it at. If you know you're compiling for a specific architecture, you might gain a speed boost in encoding/decoding operations by enabling implementations for a specific instruction set. Libmorton ships with support for:
