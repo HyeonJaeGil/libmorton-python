@@ -1,6 +1,7 @@
 # Libmorton v0.2.12
 [![CMake](https://github.com/Forceflow/libmorton/actions/workflows/cmake.yml/badge.svg)](https://github.com/Forceflow/libmorton/actions/workflows/cmake.yml) [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://opensource.org/licenses/MIT) [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/forceflow)
 
+ * **This is a python-binded version of Libmorton, a C++ library for Morton encoding/decoding.**
  * Libmorton is a **C++ header-only library** with methods to efficiently encode/decode 64, 32 and 16-bit Morton codes and coordinates, in 2D and 3D. *Morton order* is also known as *Z-order* or *[the Z-order curve](https://en.wikipedia.org/wiki/Z-order_curve)*.
  * Libmorton is a **lightweight and portable** library - the only dependencies are standard C++ headers. Architecture-specific optimizations are available.
  * More info and some benchmarks in these blogposts: [*Morton encoding*](http://www.forceflow.be/2013/10/07/morton-encodingdecoding-through-bit-interleaving-implementations/), [*Libmorton*](http://www.forceflow.be/2016/01/18/libmorton-a-library-for-morton-order-encoding-decoding/) and [*BMI2 instruction set*](http://www.forceflow.be/2016/11/25/using-the-bmi2-instruction-set-to-encode-decode-morton-codes/)
