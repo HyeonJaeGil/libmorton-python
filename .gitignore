@@ -158,3 +158,11 @@ $RECYCLE.BIN/
 .DS_Store
 *.db-shm
 *.db-wal
+
+# pycache files
+*.egg
+*.egg-info/
+*.so
+*.pyc
+*.pyo
+__pycache__/

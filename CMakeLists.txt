@@ -9,6 +9,8 @@ endif()
 
 option(BUILD_TESTING "Build unit tests for libmorton" ON)
 
+option(BUILD_PYTHON "Build python bindings for libmorton" ON)
+
 set(libmorton_INCLUDE_DIR "${libmorton_SOURCE_DIR}/include")
 
 include(GNUInstallDirs)
@@ -44,6 +46,10 @@ if(BUILD_TESTING)
   enable_testing()
 
   add_subdirectory(test)
+endif()
+
+if(BUILD_PYTHON)
+    add_subdirectory(python)
 endif()
 
 install(TARGETS libmorton
