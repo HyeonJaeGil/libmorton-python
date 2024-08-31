@@ -1,4 +1,4 @@
-# Libmorton v0.2.12
+# Libmorton v0.2.12 - Python Version!
 [![CMake](https://github.com/Forceflow/libmorton/actions/workflows/cmake.yml/badge.svg)](https://github.com/Forceflow/libmorton/actions/workflows/cmake.yml) [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://opensource.org/licenses/MIT) [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/forceflow)
 
  * **This is a python-binded version of Libmorton, a C++ library for Morton encoding/decoding.**
@@ -44,7 +44,7 @@ No compilation / installation is required (just download the headers and include
 ### Python installation
 To install the Python bindings, you can use the following command:
 ```bash
-pip install git+https://github.com/HyeonJaeGil/libmorton-python.git@python#egg=pylibmorton
+pip install git+https://github.com/HyeonJaeGil/pylibmorton.git@python#egg=pylibmorton
 ```
 
 ## Instruction sets
